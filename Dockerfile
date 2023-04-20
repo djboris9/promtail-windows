@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 curlimages/curl as bins
 
 WORKDIR /promtail
-RUN curl -Lo promtail.zip https://github.com/grafana/loki/releases/download/v2.4.1/promtail-windows-amd64.exe.zip
+RUN curl -Lo promtail.zip https://github.com/grafana/loki/releases/download/v2.8.0/promtail-windows-amd64.exe.zip
 RUN unzip /promtail/promtail.zip
 
 FROM mcr.microsoft.com/windows/servercore:ltsc2022
